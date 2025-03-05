@@ -1,3 +1,4 @@
+import 'package:cat_dog_calssifier/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +15,8 @@ class Cat_Dog_classifier extends StatefulWidget {
 class _Cat_Dog_classifierState extends State<Cat_Dog_classifier> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [],
-      ),
+    return MaterialApp(
+      home: HomeScreen(),
     );
   }
 }
