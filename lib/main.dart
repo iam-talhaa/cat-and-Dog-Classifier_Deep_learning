@@ -14,6 +14,10 @@ class Cat_Dog_classifier extends StatefulWidget {
 class _Cat_Dog_classifierState extends State<Cat_Dog_classifier> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
