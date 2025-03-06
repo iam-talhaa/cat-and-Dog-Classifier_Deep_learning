@@ -1,4 +1,5 @@
 import 'package:cat_dog_calssifier/home_screen.dart';
+import 'package:cat_dog_calssifier/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,8 @@ class _Cat_Dog_classifierState extends State<Cat_Dog_classifier> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
