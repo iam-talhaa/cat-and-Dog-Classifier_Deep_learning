@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.cat_dog_calssifier"
-    compileSdk = 36
+    compileSdk = 35
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
