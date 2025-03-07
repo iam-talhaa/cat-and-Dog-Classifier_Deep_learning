@@ -1,5 +1,9 @@
+import 'dart:io';
+
 import 'package:cat_dog_calssifier/custom/Custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:tflite_flutter/tflite_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -10,6 +14,10 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   bool _isloading = true;
+  // File _image;
+  final picker = ImagePicker();
+  // List _output;
+  Detect_image(File image) async {}
 
   @override
   Widget build(BuildContext context) {
