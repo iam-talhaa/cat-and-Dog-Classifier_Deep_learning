@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:cat_dog_calssifier/custom/Custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:tflite_flutter/tflite_flutter.dart';
+import 'package:tflite/tflite.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +17,16 @@ class _HomeScreenState extends State<HomeScreen> {
   // File _image;
   final picker = ImagePicker();
   // List _output;
-  Detect_image(File image) async {}
+  Detect_image(File image) async {
+    var output = await Tflite.runModelOnImage(
+        path: image.path,
+        numResults: 2,
+        threshold: 0.6,
+        imageMean: 127.5,
+        imageStd: 127.5);
+  }
+
+  loadModel() async {}
 
   @override
   Widget build(BuildContext context) {
